@@ -2,6 +2,9 @@
 #41113
 # Write a program to implement Huffman Encoding using a greedy strategy.
 
+
+#heapq is used to create minheap
+#heapify,heappush are inbuilt function
 import heapq
 
 class Node:
@@ -11,8 +14,11 @@ class Node:
         self.left = left
         self.right = right
         self.huff = ""
+    
+    #Magic method used to define the functionality of  less than operator
+    #Return true if a<b where a and b are objects of the class.
 
-    def __lt__(self, nxt):
+    def __lt__(self, nxt): 
         return self.freq < nxt.freq
 
 

@@ -1,12 +1,12 @@
 
 class Item:
 	def __init__(self, value, weight):
-		self.value = value
+		self.value = valuex
 		self.weight = weight
 
 
 def fractionalKnapsack(W, arr):
-
+	#lambda are anonymous fuctions
 	arr.sort(key=lambda x: (x.value/x.weight), reverse=True)
 
 	finalvalue = 0.0
@@ -22,7 +22,7 @@ def fractionalKnapsack(W, arr):
 			break
 	return finalvalue
 
-
+ 
 if __name__ == "__main__":
 
 	W = 50

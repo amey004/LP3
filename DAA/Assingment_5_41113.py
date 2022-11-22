@@ -14,7 +14,7 @@ def printSolution(board):
             print(board[i][j], end=" ")
         print()
 
-
+#check if any queen is present in diagnol from all four sides
 def isSafe(board, row, col):
     for i in range(col):
         if board[row][i] == 1:
